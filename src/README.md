@@ -8,3 +8,15 @@
 ** export ThemeContext
 
 **Then i have to create and export a porvider component 
+
+**Then i have to retuen  .provider 
+
+** Then send a childern and retuen the childern
+
+** Then i have to create a usestete hook and pass the valuse in the provider component value
+
+**Then use export provider to wrapt the app component as a childern to use the power of context 
+
+**Thene creta a button onclick function 
+
+** use this function on the context and set the tggle function 

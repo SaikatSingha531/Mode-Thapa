@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Components/Pages/Home'
 import About from './Components/Pages/About'
 import Contact from './Components/Pages/Contact'
+import { ThemeProvider } from './Context/ModeContext'
 
 const router = createBrowserRouter ([
   {
@@ -25,7 +26,10 @@ function App() {
 
   return (
     <>
+    <ThemeProvider>
+
     <RouterProvider router={router}/>
+    </ThemeProvider>
     </>
   )
 }

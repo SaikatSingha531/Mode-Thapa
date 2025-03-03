@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { use } from 'react'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../Context/ModeContext'
 
 function Navbar() {
+
+  const {mode , toggleMode}= use(ThemeContext)
+
   return (
     <>
-      <div className='flex bg-red-300 justify-between px-10 py-5 items-center'>
+      <div className={`flex justify-between px-10 py-5 items-center ${mode === "dark" ? "bg-red-800 text-amber-50" : "bg-red-300 text-black"}`}>
       <div>Logo</div>
 
       <div className='flex gap-10 justify-center items-center'>
@@ -15,8 +19,9 @@ function Navbar() {
        
       </ul>
 
-      <button className='bg-blue-600 rounded p-1 text-white '>
-        Mode
+      <button onClick={toggleMode}
+       className='bg-blue-600 rounded p-1 text-white '>
+        {mode === "dark" ? "Light " : "Dark" }
       </button>
       </div>
 
