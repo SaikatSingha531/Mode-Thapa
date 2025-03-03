@@ -20,3 +20,9 @@
 **Thene creta a button onclick function 
 
 ** use this function on the context and set the tggle function 
+
+**Then i have to get the context data on my page using ("use" api) import he use from react 
+
+** Then use the tailwind css with the Template Literals to show the dark and light mode color 
+
+** Then add some transition to make it slow animated

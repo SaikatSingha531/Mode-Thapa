@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <>
-      <div className={`flex justify-between px-10 py-5 items-center ${mode === "dark" ? "bg-red-800 text-amber-50" : "bg-red-300 text-black"}`}>
+      <div className={`flex justify-between px-10 py-5 items-center transition-all duration-500 ${mode === "dark" ? "bg-red-800 text-amber-50" : "bg-red-300 text-black"}`}>
       <div>Logo</div>
 
       <div className='flex gap-10 justify-center items-center'>
